@@ -3,7 +3,7 @@
     "extensionPacks": [
         {
             "name": "hybris-cloud-extension-pack",
-            "version": "1905.2004"
+            "version": "2102.0"
         }
     ],
     "extensions": [
