@@ -1,9 +1,9 @@
 {
-    "commerceSuiteVersion": "2011.11",
+    "commerceSuiteVersion": "2005.18",
     "extensionPacks" : [
 	{
 		"name" : "hybris-commerce-integrations",
-		"version" : "2102.0"
+		"version" : "2005.0"
 	}
 	],
     "extensions": [
@@ -59,6 +59,9 @@
 	    "personalizationservicesbackoffice",
 	    "personalizationpromotionsbackoffice",
 	    "personalizationcmsbackoffice",
+		"personalizationsearchbackoffice",		
+		"personalizationsearchweb",
+		"personalizationsearchsamplesaddon",
         "personalizationsmartedit",
 	    "textfieldconfiguratortemplatebackoffice",
 	    "textfieldconfiguratortemplateaddon",
@@ -291,6 +294,11 @@
 			"template":"yacceleratorstorefront"
 		},
 		{
+			"addon":"personalizationsearchsamplesaddon",
+			"storefront":"yacceleratorstorefront",
+			"template":"yacceleratorstorefront"
+		},
+		{
 			"addon":"acceleratorwebservicesaddon",
 			"storefront":"ycommercewebservices",
 			"template":"ycommercewebservices"
@@ -305,10 +313,6 @@
 		{
 			"key": "website.apparel.https",
 			"value": "https://apparel.clwfyft1x1-csamer2021-d6-public.model-t.cc.commerce.ondemand.com/"
-		},
-        {
-             "key": "npmancillary.run.npminstall",
-                "value": "true"
-        }
+		}
 	]
 }
