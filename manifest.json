@@ -1,9 +1,9 @@
 {
-    "commerceSuiteVersion": "2011.11",
+    "commerceSuiteVersion": "2105.3",
     "extensionPacks" : [
 	{
 		"name" : "hybris-commerce-integrations",
-		"version" : "2102.0"
+		"version" : "2108.0"
 	}
 	],
     "extensions": [
@@ -33,7 +33,6 @@
 	    "couponbackoffice",
 	    "droolsruleengineservices",
 	    "couponfacades",
-	    "promotionenginesamplesaddon",
 
         "smartedit",
         "cmssmartedit",
@@ -46,19 +45,21 @@
         "mediaweb",
         "smarteditaddon",
         "personalizationaddon",
+	"smartedittools",
         "cms2",
         "cms2lib",
 	    "cmswebservices",   
 	    "cmsbackoffice",
         "multicountrysampledataaddon",
 	    "previewpersonalizationweb",
-	    "personalizationcmsweb",	   
-	    "personalizationsampledataaddon",
+	    "personalizationcmsweb",
 	    "personalizationpromotions",
 	    "personalizationpromotionsweb",
 	    "personalizationservicesbackoffice",
 	    "personalizationpromotionsbackoffice",
 	    "personalizationcmsbackoffice",
+		"personalizationsearchbackoffice",		
+		"personalizationsearchweb",
         "personalizationsmartedit",
 	    "textfieldconfiguratortemplatebackoffice",
 	    "textfieldconfiguratortemplateaddon",
@@ -236,11 +237,6 @@
 			"template":"yacceleratorstorefront"
 		},
 		{
-			"addon":"promotionenginesamplesaddon",
-			"storefront":"yacceleratorstorefront",
-			"template":"yacceleratorstorefront"
-		},
-		{
 			"addon":"smarteditaddon",
 			"storefront":"yacceleratorstorefront",
 			"template":"yacceleratorstorefront"
@@ -305,10 +301,6 @@
 		{
 			"key": "website.apparel.https",
 			"value": "https://apparel.clwfyft1x1-csamer2021-d6-public.model-t.cc.commerce.ondemand.com/"
-		},
-        {
-             "key": "npmancillary.run.npminstall",
-                "value": "true"
-        }
+		}
 	]
 }
