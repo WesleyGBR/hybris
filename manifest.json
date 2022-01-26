@@ -1,11 +1,11 @@
 {
-    "commerceSuiteVersion": "2005.18",
-    "extensionPacks" : [
-	{
-		"name" : "hybris-commerce-integrations",
-		"version" : "2005.0"
-	}
-	],
+    "commerceSuiteVersion": "1905.15",
+    "extensionPacks": [
+        {
+            "name": "hybris-cloud-extension-pack",
+            "version": "1905.2004"
+        }
+    ],
     "extensions": [
 	    "adaptivesearchsolr",
 		"adaptivesearchbackoffice",
@@ -20,8 +20,8 @@
 	    "yacceleratorstorefront",
 	    "ycommercewebservices",
 	    "ycommercewebservicestest",
-
-	    "electronicsstore",
+        
+        "electronicsstore",
 	    "apparelstore",
 
 	    "acceleratorwebservicesaddon",
@@ -34,22 +34,6 @@
 	    "droolsruleengineservices",
 	    "couponfacades",
 	    "promotionenginesamplesaddon",
-
-        "smartedit",
-        "cmssmartedit",
-        "smarteditwebservices",
-        "cmssmarteditwebservices",
-        "oauth2",
-        "cmswebservices",
-        "permissionswebservices",
-        "previewwebservices",
-        "mediaweb",
-        "smarteditaddon",
-        "personalizationaddon",
-        "cms2",
-        "cms2lib",
-	    "cmswebservices",   
-	    "cmsbackoffice",
         "multicountrysampledataaddon",
 	    "previewpersonalizationweb",
 	    "personalizationcmsweb",	   
