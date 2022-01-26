@@ -227,11 +227,6 @@
 			"storefront":"yacceleratorstorefront",
 			"template":"yacceleratorstorefront"
 		},
-		{
-			"addon":"smarteditaddon",
-			"storefront":"yacceleratorstorefront",
-			"template":"yacceleratorstorefront"
-		},
         {
             "addon":"personalizationaddon",
             "storefront":"yacceleratorstorefront",
