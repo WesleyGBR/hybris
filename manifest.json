@@ -34,12 +34,12 @@
     },
     {
       "addon": "smarteditaddon",
-      "storefront": "<yourcustomstorefront>",
+      "storefront": "",
       "template": "yacceleratorstorefront"
     },
     {
       "addon": "personalizationaddon",
-      "storefront": "<yourcustomstorefront>",
+      "storefront": "",
       "template": "yacceleratorstorefront"
     }
   ],
@@ -94,7 +94,7 @@
         },
         {
           "key": "storefrontContextRoot",
-          "value": "<yourcustomstorefront>"
+          "value": ""
         }
       ],
       "webapps": [
@@ -113,10 +113,6 @@
         {
           "name": "oauth2",
           "contextPath": "/authorizationserver"
-        },
-        {
-          "name": "<yourcustomstorefront>",
-          "contextPath": "/<yourcustomstorefront>"
         },
         {
           "name": "smartedit",
@@ -165,17 +161,13 @@
         },
         {
           "key": "storefrontContextRoot",
-          "value": "<yourcustomstorefront>"
+          "value": ""
         }
       ],
       "webapps": [
         {
           "name": "ycommercewebservices",
           "contextPath": "/rest"
-        },
-        {
-          "name": "<yourcustomstorefront>",
-          "contextPath": "/<yourcustomstorefront>"
         },
         {
           "name": "oauth2",
