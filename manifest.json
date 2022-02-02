@@ -2,6 +2,7 @@
         "commerceSuiteVersion": "1905",
   	"extensions": [
     	"cloudmediaconversion",
+	"yacceleratorstorefront",
 	"mediaconversionbackoffice",
 	"backoffice",
 	"cmsbackoffice",
