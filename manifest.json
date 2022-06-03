@@ -155,10 +155,6 @@
                 {
                     "name": "maintenanceweb",
                     "contextPath": "/maintenance"
-                },
-                {
-                    "name": "cmswebservices",
-                    "contextPath": "/cmswebservices"
                 },                
                 {
                     "name": "hac",
@@ -209,17 +205,9 @@
                     "contextPath": "/personalizationsmartedit"
                 },
                 {
-                    "name": "personalizationpromotionssmartedit",
-                    "contextPath": "/personalizationpromotionssmartedit"
-                },
-                {
                     "name": "personalizationwebservices",
                     "contextPath": "/personalizationwebservices"
-                },
-                {
-                    "name": "personalizationsearchsmartedit",
-                    "contextPath": "/personalizationsearchsmartedit"
-                }                                                   
+                }                                                 
             ],
             "properties": [
             	{
