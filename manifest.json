@@ -1,5 +1,5 @@
 {
-    "commerceSuiteVersion": "2105.3",
+    "commerceSuiteVersion": "2105",
     "extensionPacks" : [
 	{
 		"name" : "hybris-commerce-integrations",
