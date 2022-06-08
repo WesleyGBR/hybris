@@ -1,5 +1,6 @@
 {
     "commerceSuiteVersion": "2011",
+    "solrVersion": "8.11",	
     "extensionPacks" : [
 	{
 		"name" : "hybris-commerce-integrations",
