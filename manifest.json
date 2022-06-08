@@ -1,5 +1,5 @@
 {
-    "commerceSuiteVersion": "2011.19",
+    "commerceSuiteVersion": "2011",
     "extensionPacks" : [
 	{
 		"name" : "hybris-commerce-integrations",
@@ -7,7 +7,6 @@
 	}
 	],
     "extensions": [
-	    "solrVersion": "8.11",
 	    "adaptivesearchsolr",
 		"adaptivesearchbackoffice",
 		"adaptivesearchsamplesaddon",
