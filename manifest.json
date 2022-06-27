@@ -22,6 +22,7 @@
 	    "ycommercewebservicestest",
 
 	    "electronicsstore",
+	    "apparelstore",
 
 	    "acceleratorwebservicesaddon",
 	    "orderselfserviceaddon",
@@ -42,7 +43,7 @@
         "permissionswebservices",
         "previewwebservices",
         "mediaweb",
-	"smarteditaddon",
+        "smarteditaddon",
         "personalizationaddon",
         "cms2",
         "cms2lib",
@@ -140,8 +141,12 @@
         },
         {
             "name": "accstorefront",
-            "webapps": [  
-             	{
+            "webapps": [
+                {
+                    "name": "mediaweb",
+                    "contextPath": "/medias"
+                },
+                {
                     "name": "yacceleratorstorefront",
                     "contextPath": "/yacceleratorstorefront"
                 },
@@ -150,65 +155,33 @@
                     "contextPath": "/acceleratorservices"
                 },
                 {
+                    "name": "oauth2",
+                    "contextPath": "/authorizationserver"
+                },
+                {
                     "name": "ycommercewebservices",
                     "contextPath": "/rest"
                 },                              
                 {
                     "name": "maintenanceweb",
                     "contextPath": "/maintenance"
-                },                
-                {
-                    "name": "hac",
-                    "contextPath": "/hac"
-                },
-                {
-                    "name": "mediaweb",
-                    "contextPath": "/medias"
-                },
-                {
-                    "name": "backoffice",
-                    "contextPath": "/backoffice"
                 },
                 {
                     "name": "cmswebservices",
                     "contextPath": "/cmswebservices"
-                }, 
-                {
-                    "name": "smartedit",
-                    "contextPath": "/smartedit"
-                },
-                {
-                    "name": "cmssmartedit",
-                    "contextPath": "/cmssmartedit"
-                },
-                {
-                    "name": "smarteditwebservices",
-                    "contextPath": "/smarteditwebservices"
-                },
-                {
-                    "name": "cmssmarteditwebservices",
-                    "contextPath": "/cmssmarteditwebservices"
-                },
-                {
-                    "name": "oauth2",
-                    "contextPath": "/authorizationserver"
-                },
+                },                
                 {
                     "name": "permissionswebservices",
                     "contextPath": "/permissionswebservices"
                 },
                 {
+                    "name": "hac",
+                    "contextPath": "/hac"
+                },
+                {
                     "name": "previewwebservices",
                     "contextPath": "/previewwebservices"
-                },
-                {
-                    "name": "personalizationsmartedit",
-                    "contextPath": "/personalizationsmartedit"
-                },
-                {
-                    "name": "personalizationwebservices",
-                    "contextPath": "/personalizationwebservices"
-                }                                                 
+                }                                                      
             ],
             "properties": [
             	{
