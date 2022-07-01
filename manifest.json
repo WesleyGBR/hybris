@@ -104,6 +104,7 @@
                 {
                   "name": "lpelsmartedit",
                   "contextPath": "/lpelsmartedit"
+                },
                 {
                     "name": "backoffice",
                     "contextPath": "/backoffice"
@@ -197,7 +198,7 @@
                 {
                     "name": "mediaweb",
                     "contextPath": "/medias"
-                }
+                },
                 {
                     "name": "backoffice",
                     "contextPath": "/backoffice"
