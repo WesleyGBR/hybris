@@ -36,7 +36,7 @@
 		“permissionsfacades”,
 		“permissionswebservices”,
 		“mediaconversion”,
-		“mediaconversionbackoffice”,
+		“mediaconversionbackoffice”
     ],
          "aspects": [
         {
