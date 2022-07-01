@@ -1,5 +1,5 @@
 {
-    "commerceSuiteVersion": "2105",
+    "commerceSuiteVersion": "2105.8",
     "extensionPacks" : [
 	{
 		"name" : "hybris-commerce-integrations",
@@ -7,65 +7,38 @@
 	}
 	],
     "extensions": [
-	    "adaptivesearchsolr",
-		"adaptivesearchbackoffice",
-		"adaptivesearchsamplesaddon",
-		"adaptivesearchwebservices",
-		"commerceservicesbackoffice",
-	    "solrfacetsearchbackoffice",
-	    "solrserver",
-	    "yacceleratorcockpits",
-	    "yacceleratorinitialdata",
-	    "yacceleratorfulfilmentprocess",
-	    "yacceleratorstorefront",
-	    "ycommercewebservices",
-	    "ycommercewebservicestest",
+	    <extension name='backoffice'/>
+		<extension name='platformbackoffice'/>
+		<extension name='basecommerce'/>
+		<extension name='basecommercebackoffice'/>
+		<extension name='commercefacades'/>
+		<extension name='commerceservices'/>
+		<extension name='commerceservicesbackoffice'/>
+		<extension name='commercewebservices'/>
 
-	    "electronicsstore",
-	    "apparelstore",
-
-	    "acceleratorwebservicesaddon",
-	    "orderselfserviceaddon",
-	    "customersupportbackoffice",
-	    "customerticketingaddon",
-	    "commerceorgsamplesaddon",
-	    "rulebuilderbackoffice",
-	    "couponbackoffice",
-	    "droolsruleengineservices",
-	    "couponfacades",
-
-        "smartedit",
-        "cmssmartedit",
-        "smarteditwebservices",
-        "cmssmarteditwebservices",
-        "oauth2",
-        "cmswebservices",
-        "permissionswebservices",
-        "previewwebservices",
-        "mediaweb",
-        "smarteditaddon",
-        "personalizationaddon",
-        "cms2",
-        "cms2lib",
-	    "cmswebservices",   
-	    "cmsbackoffice",
-        "multicountrysampledataaddon",
-	    "previewpersonalizationweb",
-	    "personalizationcmsweb",
-	    "personalizationpromotions",
-	    "personalizationpromotionsweb",
-	    "personalizationservicesbackoffice",
-	    "personalizationpromotionsbackoffice",
-	    "personalizationcmsbackoffice",
-		"personalizationsearchbackoffice",		
-		"personalizationsearchweb",
-        "personalizationsmartedit",
-	    "textfieldconfiguratortemplatebackoffice",
-	    "textfieldconfiguratortemplateaddon",
-	    "assistedservicestorefront",
-	    "assistedservicewebservices",
-	    "assistedservicepromotionaddon",
-        "pcmbackofficesamplesaddon"	
+		<extension name='acceleratorbackoffice'/>
+		<extension name='acceleratorcms'/>
+		<extension name='acceleratorfacades'/>
+		<extension name='acceleratorservices'/>
+		<extension name='acceleratorstorefrontcommons'/>
+		<extension name='tomcatembeddedserver'/>
+		
+		<extension name='cmssmartedit'/>
+		<extension name='cmssmarteditwebservices'/>
+		<extension name='smartedit'/>
+		<extension name='smarteditwebservices'/>
+		<extension name='cms2'/>
+		<extension name='cms2lib'/>
+		<extension name='cmsbackoffice'/>
+		<extension name='cmsocc'/>
+		<extension name='cmsfacades'/>
+		<extension name='cmswebservices'/>
+		<extension name='webservicescommons'/>
+		<extension name='previewwebservices'/>
+		<extension name='permissionsfacades'/>
+		<extension name='permissionswebservices'/>
+		<extension name='mediaconversion'/>
+		<extension name='mediaconversionbackoffice'/>
     ],
          "aspects": [
         {
