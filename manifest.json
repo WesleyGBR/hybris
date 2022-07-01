@@ -7,38 +7,36 @@
 	}
 	],
     "extensions": [
-	    <extension name='backoffice'/>
-		<extension name='platformbackoffice'/>
-		<extension name='basecommerce'/>
-		<extension name='basecommercebackoffice'/>
-		<extension name='commercefacades'/>
-		<extension name='commerceservices'/>
-		<extension name='commerceservicesbackoffice'/>
-		<extension name='commercewebservices'/>
-
-		<extension name='acceleratorbackoffice'/>
-		<extension name='acceleratorcms'/>
-		<extension name='acceleratorfacades'/>
-		<extension name='acceleratorservices'/>
-		<extension name='acceleratorstorefrontcommons'/>
-		<extension name='tomcatembeddedserver'/>
-		
-		<extension name='cmssmartedit'/>
-		<extension name='cmssmarteditwebservices'/>
-		<extension name='smartedit'/>
-		<extension name='smarteditwebservices'/>
-		<extension name='cms2'/>
-		<extension name='cms2lib'/>
-		<extension name='cmsbackoffice'/>
-		<extension name='cmsocc'/>
-		<extension name='cmsfacades'/>
-		<extension name='cmswebservices'/>
-		<extension name='webservicescommons'/>
-		<extension name='previewwebservices'/>
-		<extension name='permissionsfacades'/>
-		<extension name='permissionswebservices'/>
-		<extension name='mediaconversion'/>
-		<extension name='mediaconversionbackoffice'/>
+	        “backoffice”,
+		“platformbackoffice”,
+		“basecommerce”,
+		“basecommercebackoffice”,
+		“commercefacades”,
+		“commerceservices”,
+		“commerceservicesbackoffice”,
+		“commercewebservices”,
+		“acceleratorbackoffice”,
+		“acceleratorcms”,
+		“acceleratorfacades”,
+		“acceleratorservices”,
+		“acceleratorstorefrontcommons”,
+		“tomcatembeddedserver”,
+		“cmssmartedit”,
+		“cmssmarteditwebservices”,
+		“smartedit”,
+		“smarteditwebservices”,
+		“cms2”,
+		“cms2lib”,
+		“cmsbackoffice”,
+		“cmsocc”,
+		“cmsfacades”,
+		“cmswebservices”,
+		“webservicescommons”,
+		“previewwebservices”,
+		“permissionsfacades”,
+		“permissionswebservices”,
+		“mediaconversion”,
+		“mediaconversionbackoffice”,
     ],
          "aspects": [
         {
