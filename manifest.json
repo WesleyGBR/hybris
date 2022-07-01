@@ -1,6 +1,36 @@
 {
   "commerceSuiteVersion": "2105.8",
   "extensions": [
+    "backoffice",
+    "platformbackoffice",
+    "basecommerce",
+    "basecommercebackoffice",
+    "commercefacades",
+    "commerceservices",
+    "commerceservicesbackoffice",
+    "commercewebservices",
+    "acceleratorbackoffice",
+    "acceleratorcms",
+    "acceleratorfacades",
+    "acceleratorservices",
+    "acceleratorstorefrontcommons",
+    "tomcatembeddedserver",
+    "cmssmartedit",
+    "cmssmarteditwebservices",
+    "smartedit",
+    "smarteditwebservices",
+    "cms2",
+    "cms2lib",
+    "cmsbackoffice",
+    "cmsocc",
+    "cmsfacades",
+    "cmswebservices",
+    "webservicescommons",
+    "previewwebservices",
+    "permissionsfacades",
+    "permissionswebservices",
+    "mediaconversion",
+    "mediaconversionbackoffice"
   ],
     "useConfig": {
         "properties": [
@@ -72,13 +102,44 @@
                     "contextPath": "/medias"
                 },
                 {
+                  "name": "lpelsmartedit",
+                  "contextPath": "/lpelsmartedit"
+                {
                     "name": "backoffice",
                     "contextPath": "/backoffice"
                 },
+               {
+                    "name": "smartedit",
+                    "contextPath": "/smartedit"
+                },
                 {
-                  "name":"odata2webservices",
-                  "contextPath":"/odata2webservices"
-               }
+                    "name": "cmssmartedit",
+                    "contextPath": "/cmssmartedit"
+                },
+                {
+                    "name": "smarteditwebservices",
+                    "contextPath": "/smarteditwebservices"
+                },
+                {
+                    "name": "cmssmarteditwebservices",
+                    "contextPath": "/cmssmarteditwebservices"
+                },
+                {
+                    "name": "oauth2",
+                    "contextPath": "/authorizationserver"
+                },
+                {
+                    "name": "cmswebservices",
+                    "contextPath": "/cmswebservices"
+                },
+                {
+                    "name": "permissionswebservices",
+                    "contextPath": "/permissionswebservices"
+                },
+                {
+                    "name": "previewwebservices",
+                    "contextPath": "/previewwebservices"
+                }
             ]
         },
         {
@@ -137,6 +198,18 @@
                     "name": "mediaweb",
                     "contextPath": "/medias"
                 }
+                {
+                    "name": "backoffice",
+                    "contextPath": "/backoffice"
+                },
+                {
+                    "name": "commercewebservices",
+                    "contextPath": "/occ"
+                },
+                {
+                    "name": "odata2webservices",
+                    "contextPath": "/odata2webservices"
+                }
             ]
         },
         {
@@ -163,10 +236,6 @@
                 {
                     "name": "hac",
                     "contextPath": "/hac"
-                },
-                {
-                    "name": "fspoccservices",
-                    "contextPath": "/rest"
                 },
                 {
                     "name": "smartedit",
@@ -205,28 +274,24 @@
                     "contextPath": "/previewwebservices"
                 },
                 {
+                      "name": "warehousingwebservices",
+                      "contextPath": "/warehousingwebservices"
+                },
+                {
                     "name": "mediaweb",
                     "contextPath": "/medias"
                 },
                 {
-                    "name": "personalizationsmartedit",
-                    "contextPath": "/personalizationsmartedit"
+                      "name": "samlsinglesignon",
+                      "contextPath": "/samsinglesignon"
                 },
                 {
-                    "name": "personalizationpromotionssmartedit",
-                    "contextPath": "/personalizationpromotionssmartedit"
+                      "name": "lpelwebservices",
+                      "contextPath": "/lpelwebservices"
                 },
                 {
-                    "name": "personalizationwebservices",
-                    "contextPath": "/personalizationwebservices"
-                },
-                {
-                    "name": "personalizationsearchsmartedit",
-                    "contextPath": "/personalizationsearchsmartedit"
-                },
-                {
-                    "name": "fsppromotionsintegration",
-                    "contextPath": "/promos"
+                      "name": "odata2webservices",
+                      "contextPath": "/odata2webservices"
                 }
             ]
         }
