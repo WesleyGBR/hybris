@@ -10,35 +10,9 @@
     ],
   "extensions": ["azurecloudhotfolder","cloudcommons","cloudhotfolder","cloudmediaconversion"],
   "useConfig":{
-		"extensions": {
-            "location": "/hybris/config/localextensions.xml",
-            "exclude": []
-        },
         "solr": {
             "location": "/solr"
         },
-		"properties": [
-		{
-			"location": "/hybris/config/devlopment/local.properties",
-			"persona": "development"
-		},
-		{
-			"location": "/hybris/config/staging/local.properties",
-			"persona": "staging"
-		}
-	]
-  },
-  "tests": {
-        "extensions": ["material","markethubcore","markethubfacades","customer","ordermgmtservices","paymentInfo","ordermgmtfacades"],
-        "annotations": ["UnitTests", "IntegrationTests"],
-        "packages": ["com.shell.mh.*"]
-   },
-  "properties": [
-  	  {
-        "key":"configFile",
-        "value":"/opt/hybris/bin/custom/markethubinitialdata/resources/update-config.json"
-      }
-  ],	
   "aspects": [
     {
       "name": "backgroundProcessing",
