@@ -1,0 +1,203 @@
+{
+  "commerceSuiteVersion": "2011",
+  "solrVersion": "8.11",
+  "enableImageProcessingService": true,
+  "extensionPacks": [
+       {
+           "name": "hybris-commerce-integrations",
+            "version": "2005.0"
+       }
+    ],
+  "extensions": ["azurecloudhotfolder","cloudcommons","cloudhotfolder","cloudmediaconversion"],
+  "useConfig":{
+		"extensions": {
+            "location": "/hybris/config/localextensions.xml",
+            "exclude": []
+        },
+        "solr": {
+            "location": "/solr"
+        },
+		"properties": [
+		{
+			"location": "/hybris/config/devlopment/local.properties",
+			"persona": "development"
+		},
+		{
+			"location": "/hybris/config/staging/local.properties",
+			"persona": "staging"
+		}
+	]
+  },
+  "tests": {
+        "extensions": ["material","markethubcore","markethubfacades","customer","ordermgmtservices","paymentInfo","ordermgmtfacades"],
+        "annotations": ["UnitTests", "IntegrationTests"],
+        "packages": ["com.shell.mh.*"]
+   },
+  "properties": [
+  	  {
+        "key":"configFile",
+        "value":"/opt/hybris/bin/custom/markethubinitialdata/resources/update-config.json"
+      }
+  ],	
+  "aspects": [
+    {
+      "name": "backgroundProcessing",
+      "properties": [
+        {
+          "key": "cluster.node.groups",
+          "value": "integration,yHotfolderCandidate"
+        }
+      ],
+      "webapps": [
+        {
+          "name": "hac",
+          "contextPath": "/hac"
+        },
+		{
+          "name": "odata2webservices",
+		  "contextPath": "/odata2webservices"
+        }
+      ]
+    },
+    {
+      "name": "backoffice",
+      "webapps": [
+        {
+          "name": "backoffice",
+          "contextPath": "/backoffice"
+        },
+        {
+          "name": "hac",
+          "contextPath": "/hac"
+        },
+		{
+			"name": "mediaweb",
+			"contextPath": "/medias"
+		},
+        {
+          "name": "smartedit",
+          "contextPath": "/smartedit"
+        },
+		{
+		  "name": "smarteditwebservices",
+          "contextPath": "/smarteditwebservices"
+		},
+		{
+		  "name": "oauth2",
+		  "contextPath": "/authorizationserver"
+		},
+		{
+		  "name": "cmssmarteditwebservices",
+		  "contextPath": "/cmssmarteditwebservices"
+		},
+		{
+		  "name": "cmssmartedit",
+		  "contextPath": "/cmssmartedit"
+		},
+		{
+		  "name": "personalizationsearchsmartedit",
+		  "contextPath": "/personalizationsearchsmartedit"
+		},
+		{
+		  "name": "personalizationsmartedit",
+		  "contextPath": "/personalizationsmartedit"
+		},
+		{
+		  "name": "personalizationpromotionssmartedit",
+		  "contextPath": "/personalizationpromotionssmartedit"
+		},
+		{
+		  "name": "cmswebservices",
+		  "contextPath": "/cmswebservices"
+		},
+		{
+		  "name": "permissionswebservices",
+		  "contextPath": "/permissionswebservices"
+		},
+		{
+		  "name": "previewwebservices",
+		  "contextPath": "/previewwebservices"
+		},
+		{
+		  "name": "personalizationwebservices",
+		  "contextPath": "/personalizationwebservices"
+		},
+		{
+          "name": "samlsinglesignon",
+          "contextPath": "/samlsinglesignon"
+		}
+      ]
+    },
+    {
+      "name": "api",
+      "properties": [
+		{
+			"key": "corsfilter.commercewebservices.allowedOrigins",
+			"value": "*"
+		},
+		{
+		     "key":"corsfilter.assistedservicewebservices.allowedOrigins",
+			 "value": "*"
+		},
+		{
+			"key": "corsfilter.commercewebservices.allowedMethods",
+			"value": "GET HEAD OPTIONS PATCH PUT POST DELETE"
+		},
+		{
+			"key": "corsfilter.commercewebservices.allowedHeaders",
+			"value": "origin content-type accept authorization cache-control x-anonymous-consents x-profile-tag-debug x-consent-reference occ-personalization-id occ-personalization-time"
+		},
+		{
+			"key": "corsfilter.commercewebservices.exposedHeaders",
+			"value": "x-anonymous-consents occ-personalization-id occ-personalization-time"
+		},
+		{
+			"key": "corsfilter.commercewebservices.allowCredentials",
+			"value": "true"
+		},
+		{
+			"key": "corsfilter.smarteditwebservices.allowedOrigins",
+			"value": "*"
+		},
+		{
+			"key": "corsfilter.smarteditwebservices.allowedMethods",
+			"value": "GET HEAD OPTIONS PATCH PUT POST DELETE"
+		},
+		{
+			"key": "corsfilter.smarteditwebservices.allowedHeaders",
+			"value": "origin content-type accept authorization cache-control x-anonymous-consents x-profile-tag-debug x-consent-reference occ-personalization-id occ-personalization-time"
+		},
+		{
+			"key": "corsfilter.smarteditwebservices.exposedHeaders",
+			"value": "x-anonymous-consents occ-personalization-id occ-personalization-time"
+		},
+		{
+			"key": "corsfilter.smarteditwebservices.allowCredentials",
+			"value": "true"
+		}
+	  ],
+      "webapps": [
+        {
+          "name": "commercewebservices",
+          "contextPath": "/occ"
+        },
+		{
+          "name": "assistedservicewebservices",
+          "contextPath": "/assistedservicewebservices"
+        },
+        {
+          "name": "mediaweb",
+          "contextPath": "/medias"
+        },
+        {
+          "name": "oauth2",
+          "contextPath": "/authorizationserver"
+        },
+		{
+          "name": "hac",
+          "contextPath": "/hac"
+        }		
+      ]
+    }
+  ]
+}
