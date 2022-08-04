@@ -16,7 +16,7 @@
   "properties": [
   	  {
         "key":"configFile",
-        "value":"/update-config.json"
+        "value":"/hybris/update-config.json"
       }
   ],	
   "aspects": [
