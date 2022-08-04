@@ -1,0 +1,36 @@
+{
+  "init": "Go",
+  "initmethod": "update",
+  "essential": "false",
+  "localizetypes": "true",
+  "markethubinitialdata_sample": "false",
+  "solrVersion": "8.11",
+  "basecommerce_create geocoding cron job": [
+    "no"
+  ],
+  "mediaconversion_sampledata": [
+    "false"
+  ],
+  "cloudmediaconversion_sampledata": [
+    "false"
+  ],
+  "modelt_enabled": [
+    "yes"
+  ],
+  "solrcloudbackup_defaults": [
+    "false"
+  ],
+  "markethubinitialdata_importCoreData": [
+    "no"
+  ],
+  "markethubinitialdata_importSampleData": [
+    "no"
+  ],
+  "markethubinitialdata_activateSolrCronJobs": [
+    "yes"
+  ],
+  "yacceleratorcore_accessRights": [
+    "yes"
+  ],
+  "filteredPatches": "true"
+}
