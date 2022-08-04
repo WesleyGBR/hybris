@@ -1,5 +1,5 @@
 {
-  "commerceSuiteVersion": "2011.22",
+  "commerceSuiteVersion": "2011",
   "solrVersion": "8.11",
   "enableImageProcessingService": true,
   "extensionPacks": [
@@ -13,6 +13,12 @@
         "solr": {
             "location": "/solr"
         },
+  "properties": [
+  	  {
+        "key":"configFile",
+        "value":"/update-config.json"
+      }
+  ],	
   "aspects": [
     {
       "name": "backgroundProcessing",
