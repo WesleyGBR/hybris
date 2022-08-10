@@ -42,7 +42,7 @@
     },
     {
       "addon": "personalizationaddon",
-      "storefront": "<yourcustomstorefront>",
+      "storefront": "yacceleratorstorefront",
       "template": "yacceleratorstorefront"
     }
   ],
