@@ -97,7 +97,7 @@
         },
         {
           "key": "storefrontContextRoot",
-          "value": "<yourcustomstorefront>"
+          "value": ""
         }
       ],
       "webapps": [
@@ -118,8 +118,8 @@
           "contextPath": "/authorizationserver"
         },
         {
-          "name": "<yourcustomstorefront>",
-          "contextPath": "/<yourcustomstorefront>"
+          "name": "yacceleratorstorefront",
+          "contextPath": "yacceleratorstorefront"
         },
         {
           "name": "smartedit",
@@ -168,7 +168,7 @@
         },
         {
           "key": "storefrontContextRoot",
-          "value": "<yourcustomstorefront>"
+          "value": ""
         }
       ],
       "webapps": [
@@ -177,8 +177,8 @@
           "contextPath": "/rest"
         },
         {
-          "name": "<yourcustomstorefront>",
-          "contextPath": "/<yourcustomstorefront>"
+          "name": "yacceleratorstorefront",
+          "contextPath": "yacceleratorstorefront"
         },
         {
           "name": "oauth2",
@@ -229,7 +229,7 @@
         },
         {
           "name": "yacceleratorstorefront",
-          "contextPath": ""
+          "contextPath": "yacceleratorstorefront"
         },
         {
           "name": "acceleratorservices",
