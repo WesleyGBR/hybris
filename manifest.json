@@ -37,7 +37,7 @@
     },
     {
       "addon": "smarteditaddon",
-      "storefront": "<yourcustomstorefront>",
+      "storefront": "yacceleratorstorefront",
       "template": "yacceleratorstorefront"
     },
     {
