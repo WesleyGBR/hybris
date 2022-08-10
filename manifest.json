@@ -1,36 +1,33 @@
 {
   "commerceSuiteVersion": "2105",
   "extensions": [
+    "kiwi",
+    "tiger",
+    "yacceleratorstorefront",
     "backoffice",
-    "platformbackoffice",
-    "basecommerce",
-    "basecommercebackoffice",
-    "commercefacades",
-    "commerceservices",
-    "commerceservicesbackoffice",
-    "commercewebservices",
-    "acceleratorbackoffice",
-    "acceleratorcms",
-    "acceleratorfacades",
-    "acceleratorservices",
-    "acceleratorstorefrontcommons",
-    "tomcatembeddedserver",
-    "cmssmartedit",
-    "cmssmarteditwebservices",
-    "smartedit",
-    "smarteditwebservices",
-    "cms2",
-    "cms2lib",
     "cmsbackoffice",
-    "cmsocc",
-    "cmsfacades",
+    "platformbackoffice",
+    "modeltacceleratorservices",
+    "electronicsstore",
+    "yacceleratorfulfilmentprocess",
+    "albinoaddon",
+    "azurecloudhotfolder",
+    "ycommercewebservices",
+    "smartedit",
+    "smarteditaddon",
+    "smartedittools",
+    "cmssmartedit",
+    "smarteditwebservices",
+    "cmssmarteditwebservices",
+    "personalizationsmartedit",
+    "personalizationpromotionssmartedit",
+    "personalizationwebservices",
+    "personalizationsearchsmartedit",
+    "oauth2",
     "cmswebservices",
-    "webservicescommons",
     "previewwebservices",
-    "permissionsfacades",
-    "permissionswebservices",
-    "mediaconversion",
-    "mediaconversionbackoffice"
+    "mediaweb",
+    "permissionswebservices"
   ],
   "storefrontAddons": [
     {
@@ -40,12 +37,12 @@
     },
     {
       "addon": "smarteditaddon",
-      "storefront": "yacceleratorstorefront",
+      "storefront": "<yourcustomstorefront>",
       "template": "yacceleratorstorefront"
     },
     {
       "addon": "personalizationaddon",
-      "storefront": "yacceleratorstorefront",
+      "storefront": "<yourcustomstorefront>",
       "template": "yacceleratorstorefront"
     }
   ],
@@ -100,7 +97,7 @@
         },
         {
           "key": "storefrontContextRoot",
-          "value": "yacceleratorstorefront"
+          "value": "<yourcustomstorefront>"
         }
       ],
       "webapps": [
@@ -121,8 +118,8 @@
           "contextPath": "/authorizationserver"
         },
         {
-          "name": "yacceleratorstorefront",
-          "contextPath": "/yacceleratorstorefront"
+          "name": "<yourcustomstorefront>",
+          "contextPath": "/<yourcustomstorefront>"
         },
         {
           "name": "smartedit",
@@ -171,7 +168,7 @@
         },
         {
           "key": "storefrontContextRoot",
-          "value": "yacceleratorstorefront"
+          "value": "<yourcustomstorefront>"
         }
       ],
       "webapps": [
@@ -180,8 +177,8 @@
           "contextPath": "/rest"
         },
         {
-          "name": "yacceleratorstorefront",
-          "contextPath": "/yacceleratorstorefront"
+          "name": "<yourcustomstorefront>",
+          "contextPath": "/<yourcustomstorefront>"
         },
         {
           "name": "oauth2",
