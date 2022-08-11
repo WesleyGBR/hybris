@@ -1,301 +1,341 @@
 {
-  "commerceSuiteVersion": "2105.8",
-  "extensions": [
-      	"adaptivesearch",
-      	"adaptivesearchbackoffice",
-     	"adaptivesearchfacades",
-  	"adaptivesearchsolr",
-  	"adaptivesearchwebservices",
-  	"wishlist",
-    	"pcmbackoffice",
-  	"backoffice",
-  	"backofficesolrsearch",
-  	"platformbackoffice",
-  	"basecommerce",
-  	"basecommercebackoffice",
-	"payment",
-	"promotions",
-	"promotionsbackoffice",
-	"commercefacades",
-	"commerceservices",
-	"commerceservicesbackoffice",
-  	"commercewebservices",	  	
-      	"acceleratorbackoffice",
-      	"couponbackoffice",
-  	"couponfacades",
-    	"couponservices",
-  	"couponwebservices",
-    	"customercouponbackoffice",
-	"customercouponfacades",
-	"customercouponocc",
-    	"customercouponservices",
-	"customersupportbackoffice",
-	"springintegrationlibs",
-	"promotionenginebackoffice",
-    	"promotionengineservices",
-	"droolsruleengineservices",
-  	"ordercalculation",
-  	"rulebuilderbackoffice",
-	"ruledefinitions",
-	"ruleengine",
-	"ruleenginebackoffice",
-	"ruleengineservices",
-  	"solrfacetsearch",
-	"solrfacetsearchbackoffice",
-	"solrserver",
-	"cmssmartedit",
-	"cmssmarteditwebservices",
-	"smartedit",
-	"smarteditwebservices",
-	"cms2",
-	"cms2lib",
-	"cmsbackoffice",
-	"cmsocc",
-  	"cmsfacades",
-	"cmswebservices",
-	"webservicescommons",
-  	"previewwebservices",
-  	"permissionsfacades",
-  	"permissionswebservices",
-    	"mediaconversion",
-    	"mediaconversionbackoffice",
-	"subscriptionbundleservices",
-	"subscriptionbundlebackoffice",
-	"configurablebundlebackoffice",
-	"configurablebundleocc",	
-    	"outboundservices",
-  	"integrationmonitoringbackoffice",
-  	"outboundsyncbackoffice"
+  "commerceSuiteVersion": "2105",
+	"enableImageProcessingService": true,
+	"extensionPacks" : [
+	{
+		"name" : "hybris-commerce-integrations",
+		"version" : "2108.0"
+	}
+		],
+  "extensions": ["azurecloudhotfolder" , "cloudmediaconversion"],
+  "storefrontAddons": [
+    {
+      "addon": "b2bacceleratoraddon",
+      "storefront": "bauschstorefront",
+      "template": "yacceleratorstorefront"
+    },
+    {
+      "addon": "acceleratorwebservicesaddon",
+      "storefront": "ycommercewebservices",
+      "template": "ycommercewebservices"
+    },
+    {
+      "addon": "smarteditaddon",
+      "storefront": "bauschstorefront",
+      "template": "yacceleratorstorefront"
+    },
+    {
+      "addon": "bauschacceleratoraddon",
+      "storefront": "bauschstorefront",
+      "template": "yacceleratorstorefront"
+    },
+    {
+      "addon": "bauschproductconfigaddon",
+      "storefront": "bauschstorefront",
+      "template": "yacceleratorstorefront"
+    },
+    {
+      "addon": "bauschcdcloginaddon",
+      "storefront": "bauschstorefront",
+      "template": "yacceleratorstorefront"
+    },
+    {
+      "addon": "bauschcustomersupportaddon",
+      "storefront": "bauschstorefront",
+      "template": "yacceleratorstorefront"
+    }
   ],
-    "properties": [
+  "properties": [
+    {
+      "key": "hac.webroot",
+      "value": "/hac"
+    },
+    {
+      "key": "lang.packs",
+      "value": "en,fr"
+    },
+    {
+      "key": "corsfilter.acceleratorservices.allowedOrigins",
+      "value": "*"
+    },
+    {
+      "key": "corsfilter.ycommercewebservices.allowedOrigins",
+      "value": "*"
+    },
+    {
+      "key": "bauschstorefront.additionalWebSpringConfigs.smarteditaddon",
+      "value": "classpath:/smarteditaddon/web/spring/smarteditaddon-web-spring.xml"
+    },
+    {
+      "key": "bauschstorefront.wro4jconfigscan.smarteditaddon",
+      "value": "true"
+    },
+    {
+      "key": "mail.smtp.socketFactory.class",
+      "value": "javax.net.ssl.SSLSocketFactory"
+    },
+    {
+        "key": "saporderexchange.orderoutbound.maxRetries",
+        "value": "3"
+    },
+    {
+        "key": "og4j.logger.de.hybris.platform.sap.orderexchange",
+        "value": "debug"
+    },
+    {
+        "key":"sapcpicustomerexchangeb2b.mdm.destination.enabled",
+        "value": "true"
+    },
+    {
+        "key":"apiregistryservices.events.exporting",
+        "value": "true"
+    }
+  ],
+  "aspects": [
+    {
+      "name": "backoffice",
+      "properties": [
         {
-            "key": "lang.packs",
-            "value": "de,de_DE,en,en_XM,en_AU,en_NZ,en_CA,en_GB,es,es_CO,es_ES,es_US,es_XM,es_LA,fr,fr_FR,fr_CA,it,it_IT,ja,ko,pl,pl_PL,pt,pt_PT,pt_BR,ru,ru_RU,zh,zh_TW,zh_ZH,hi,id,cs,cs_CZ,cy,tr_TR,no_NO,uk_UA,sl_SI,sk_SK,sr_RS,nn_NO,lt_LT,fi_FI,el_GR,hu_HU,lv_LV,et_ET,hr_HR,ar_AE,bg_BG,sv_SE,jp_JP,da_DK,nl_NL,ro_RO"
+          "key": "storefrontContextRoot",
+          "value": "/bauschstorefront"
+        }	
+      ],
+      "webapps": [
+        {
+          "name": "hac",
+          "contextPath": "/hac"
         },
         {
-            "key": "endpoint.hac.platform.init.disabled",
-            "value": "true"
+          "name": "mediaweb",
+          "contextPath": "/medias"
         },
         {
-            "key": "endpoint.hac.platform.update.disabled",
-            "value": "false"
+          "name": "backoffice",
+          "contextPath": "/backoffice"
         },
         {
-            "key": "backoffice.solr.search.index.autoinit",
-            "value": "true"
+          "name": "odata2webservices",
+          "contextPath": "/odata2webservices"
+        },
+		{
+          "name": "samlsinglesignon",
+          "contextPath": "/samlsinglesignon"
+        },
+	 {
+          "name": "smartedit",
+          "contextPath": "/smartedit"
         },
         {
-            "key": "backoffice.cockpit.ytestid.enabled",
-            "value": "true"
+          "name": "cmssmartedit",
+          "contextPath": "/cmssmartedit"
+        },
+        {
+          "name": "smarteditwebservices",
+          "contextPath": "/smarteditwebservices"
+        },
+        {
+          "name": "cmssmarteditwebservices",
+          "contextPath": "/cmssmarteditwebservices"
+        },
+        {
+          "name": "personalizationsmartedit",
+          "contextPath": "/personalizationsmartedit"
+        },
+        {
+          "name": "personalizationpromotionssmartedit",
+          "contextPath": "/personalizationpromotionssmartedit"
+        },
+		  {
+          "name": "oauth2",
+          "contextPath": "/authorizationserver"
+        },
+        {
+          "name": "cmswebservices",
+          "contextPath": "/cmswebservices"
+        },
+        {
+          "name": "permissionswebservices",
+          "contextPath": "/permissionswebservices"
+        },
+        {
+          "name": "previewwebservices",
+          "contextPath": "/previewwebservices"
+        },
+        {
+          "name": "personalizationwebservices",
+          "contextPath": "/personalizationwebservices"
+        },
+        {
+          "name": "personalizationsearchsmartedit",
+          "contextPath": "/personalizationsearchsmartedit"
         }
+      ]
+    },
+    {
+      "name": "accstorefront",
+      "properties": [
+        {
+          "key": "spring.session.enabled",
+          "value": "true"
+        },
+        {
+          "key": "spring.session.bauschstorefront.save",
+          "value": "async"
+        },
+        {
+          "key": "spring.session.bauschstorefront.cookie.name",
+          "value": "JSESSIONID"
+        },
+        {
+          "key": "spring.session.bauschstorefront.cookie.path",
+          "value": "/"
+        },
+        {
+          "key": "bauschstorefront.webroot",
+          "value": ""
+        },
+        {
+          "key": "storefrontContextRoot",
+          "value": ""
+        },
+        {
+          "key":"xss.filter.header.X-Frame-Options",
+          "value":""
+        }
+      ],
+      "webapps": [
+        {
+          "name": "hac",
+          "contextPath": "/hac"
+        },
+        {
+          "name": "mediaweb",
+          "contextPath": "/medias"
+        },
+        {
+          "name": "bauschstorefront",
+          "contextPath": ""
+        },
+        {
+          "name": "acceleratorservices",
+          "contextPath": "/acceleratorservices"
+        },
+        {
+          "name": "smartedit",
+          "contextPath": "/smartedit"
+        },
+        {
+          "name": "cmssmartedit",
+          "contextPath": "/cmssmartedit"
+        },
+        {
+          "name": "smarteditwebservices",
+          "contextPath": "/smarteditwebservices"
+        },
+        {
+          "name": "cmssmarteditwebservices",
+          "contextPath": "/cmssmarteditwebservices"
+        },
+        {
+          "name": "personalizationsmartedit",
+          "contextPath": "/personalizationsmartedit"
+        },
+        {
+          "name": "personalizationpromotionssmartedit",
+          "contextPath": "/personalizationpromotionssmartedit"
+        },
+        {
+          "name": "oauth2",
+          "contextPath": "/authorizationserver"
+        },
+        {
+          "name": "cmswebservices",
+          "contextPath": "/cmswebservices"
+        },
+        {
+          "name": "permissionswebservices",
+          "contextPath": "/permissionswebservices"
+        },
+        {
+          "name": "previewwebservices",
+          "contextPath": "/previewwebservices"
+        },
+        {
+          "name": "personalizationwebservices",
+          "contextPath": "/personalizationwebservices"
+        },
+        {
+          "name": "personalizationsearchsmartedit",
+          "contextPath": "/personalizationsearchsmartedit"
+        },
+        {
+          "name": "adaptivesearchwebservices",
+          "contextPath": "/adaptivesearchwebservices"
+        },
+		{
+          "name": "samlsinglesignon",
+          "contextPath": "/samlsinglesignon"
+        },
+		{
+          "name": "paymetric",
+          "contextPath": "/paymetric"
+        }
+      ]
+    },
+    {
+      "name": "backgroundProcessing",
+      "properties": [
+        {
+          "key": "cluster.node.groups",
+          "value": "integration,yHotfolderCandidate"
+        },
+        {
+            "key": "cloud.hotfolder.default.mapping.header.catalog",
+            "value": "koreaEcpProductCatalog"
+        },
+        {
+            "key": "cloud.hotfolder.default.mapping.root.dir",
+            "value": "koreaecp"
+        },
+        {
+            "key": "cloud.hotfolder.default.zip.header.catalog",
+            "value": "koreaEcpProductCatalog"
+        },
+        {
+            "key": "cloud.hotfolder.default.zip.mapping.product.catalog",
+            "value": "koreaEcpProductCatalog"
+        },
+        {
+            "key": "cloud.hotfolder.default.zip.mapping.content.catalogs",
+            "value": "koreaDigitalContentCatalog"
+        },
+        {
+            "key": "cloud.hotfolder.default.zip.mapping.store.names",
+            "value": "koreaecp"
+        }
+      ],
+      "webapps": [
+        {
+          "name": "hac",
+          "contextPath": "/hac"
+        },
+        {
+          "name": "mediaweb",
+          "contextPath": "/medias"
+        },
+        {
+          "name": "backoffice",
+          "contextPath": "/backoffice"
+        }
+      ]
+    }
+  ],
+  "webTests": {
+    "extensions": [
+      "bauschstorefront"
     ],
-    "aspects": [
-        {
-            "name": "backoffice",
-            "properties": [],
-            "webapps": [
-                {
-                    "name": "hac",
-                    "contextPath": "/hac"
-                },
-                {
-                    "name": "mediaweb",
-                    "contextPath": "/medias"
-                },
-                {
-                  "name": "lpelsmartedit",
-                  "contextPath": "/lpelsmartedit"
-                },
-                {
-                    "name": "backoffice",
-                    "contextPath": "/backoffice"
-                },
-               {
-                    "name": "smartedit",
-                    "contextPath": "/smartedit"
-                },
-                {
-                    "name": "cmssmartedit",
-                    "contextPath": "/cmssmartedit"
-                },
-                {
-                    "name": "smarteditwebservices",
-                    "contextPath": "/smarteditwebservices"
-                },
-                {
-                    "name": "cmssmarteditwebservices",
-                    "contextPath": "/cmssmarteditwebservices"
-                },
-                {
-                    "name": "oauth2",
-                    "contextPath": "/authorizationserver"
-                },
-                {
-                    "name": "cmswebservices",
-                    "contextPath": "/cmswebservices"
-                },
-                {
-                    "name": "permissionswebservices",
-                    "contextPath": "/permissionswebservices"
-                },
-                {
-                    "name": "previewwebservices",
-                    "contextPath": "/previewwebservices"
-                }
-            ]
-        },
-        {
-            "name": "accstorefront",
-            "properties": [
-                {
-                    "key": "spring.session.enabled",
-                    "value": "true"
-                },
-                {
-                    "key": "spring.session.yacceleratorstorefront.save",
-                    "value": "async"
-                },
-                {
-                    "key": "spring.session.yacceleratorstorefront.cookie.name",
-                    "value": "JSESSIONID"
-                },
-                {
-                    "key": "spring.session.yacceleratorstorefront.cookie.path",
-                    "value": "/"
-                },
-                {
-                    "key": "storefrontContextRoot",
-                    "value": ""
-                }
-            ],
-            "webapps": [
-                {
-                    "name": "hac",
-                    "contextPath": "/hac"
-                },
-                {
-                    "name": "mediaweb",
-                    "contextPath": "/medias"
-                },
-                {
-                    "name": "acceleratorservices",
-                    "contextPath": "/acceleratorservices"
-                }
-            ]
-        },
-        {
-            "name": "backgroundProcessing",
-            "properties": [
-                {
-                    "key": "cluster.node.groups",
-                    "value": "integration,yHotfolderCandidate"
-                }
-            ],
-            "webapps": [
-                {
-                    "name": "hac",
-                    "contextPath": "/hac"
-                },
-                {
-                    "name": "mediaweb",
-                    "contextPath": "/medias"
-                },
-                {
-                    "name": "backoffice",
-                    "contextPath": "/backoffice"
-                },
-                {
-                    "name": "commercewebservices",
-                    "contextPath": "/occ"
-                },
-                {
-                    "name": "odata2webservices",
-                    "contextPath": "/odata2webservices"
-                }
-            ]
-        },
-        {
-            "name": "api",
-            "properties": [
-                {
-                    "key": "xss.filter.header.X-Frame-Options",
-                    "value": ""
-                },
-                {
-                    "key": "tomcat.maxthreads",
-                    "value": "1200"
-                },
-                {
-                    "key": "xss.filter.header.X-Frame-Options",
-                    "value": ""
-                },
-                {
-                    "key": "cms.components.allowUnsafeJavaScript",
-                    "value": "true"
-                }
-            ],
-            "webapps": [
-                {
-                    "name": "hac",
-                    "contextPath": "/hac"
-                },
-                {
-                    "name": "smartedit",
-                    "contextPath": "/smartedit"
-                },
-                {
-                    "name": "cmssmartedit",
-                    "contextPath": "/cmssmartedit"
-                },
-                {
-                    "name": "smarteditwebservices",
-                    "contextPath": "/smarteditwebservices"
-                },
-                {
-                    "name": "cmssmarteditwebservices",
-                    "contextPath": "/cmssmarteditwebservices"
-                },
-                {
-                    "name": "acceleratorservices",
-                    "contextPath": "/acceleratorservices"
-                },
-                {
-                    "name": "oauth2",
-                    "contextPath": "/authorizationserver"
-                },
-                {
-                    "name": "cmswebservices",
-                    "contextPath": "/cmswebservices"
-                },
-                {
-                    "name": "permissionswebservices",
-                    "contextPath": "/permissionswebservices"
-                },
-                {
-                    "name": "previewwebservices",
-                    "contextPath": "/previewwebservices"
-                },
-                {
-                      "name": "warehousingwebservices",
-                      "contextPath": "/warehousingwebservices"
-                },
-                {
-                    "name": "mediaweb",
-                    "contextPath": "/medias"
-                },
-                {
-                      "name": "samlsinglesignon",
-                      "contextPath": "/samsinglesignon"
-                },
-                {
-                      "name": "lpelwebservices",
-                      "contextPath": "/lpelwebservices"
-                },
-                {
-                      "name": "odata2webservices",
-                      "contextPath": "/odata2webservices"
-                }
-            ]
-        }
+    "excludedPackages": [
+      "de.hybris.platform.*"
     ]
+  }
 }
