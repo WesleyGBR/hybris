@@ -1,5 +1,5 @@
 {
-    "commerceSuiteVersion": "2005.18",
+    "commerceSuiteVersion": "2005",
     "extensionPacks" : [
 	{
 		"name" : "hybris-commerce-integrations",
@@ -307,12 +307,12 @@
 	"properties":[
 		{
 			"key": "website.electronics.https",
-			"value": "https://electronics.clwfyft1x1-csamer2021-d6-public.model-t.cc.commerce.ondemand.com/"
+			"value": "https://electronics.clwfyft1x1-csamer2021-d57-public.model-t.cc.commerce.ondemand.com/"
 			
 		},
 		{
 			"key": "website.apparel.https",
-			"value": "https://apparel.clwfyft1x1-csamer2021-d6-public.model-t.cc.commerce.ondemand.com/"
+			"value": "https://apparel.clwfyft1x1-csamer2021-d57-public.model-t.cc.commerce.ondemand.com/"
 		}
 	]
 }
