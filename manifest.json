@@ -1,8 +1,6 @@
 {
   "commerceSuiteVersion": "2211",
   "extensions": [
-    "kiwi",
-    "tiger",
     "yacceleratorstorefront",
     "backoffice",
     "cmsbackoffice",
