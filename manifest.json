@@ -28,11 +28,6 @@
   ],
   "storefrontAddons": [
     {
-      "addon": "albinoaddon",
-      "storefront": "yacceleratorstorefront",
-      "template": "yacceleratorstorefront"
-    },
-    {
       "addon": "smarteditaddon",
       "storefront": "yacceleratorstorefront",
       "template": "yacceleratorstorefront"
