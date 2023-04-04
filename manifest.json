@@ -31,11 +31,6 @@
       "addon": "smarteditaddon",
       "storefront": "yacceleratorstorefront",
       "template": "yacceleratorstorefront"
-    },
-    {
-      "addon": "personalizationaddon",
-      "storefront": "yacceleratorstorefront",
-      "template": "yacceleratorstorefront"
     }
   ],
   "properties": [
@@ -250,11 +245,6 @@
     }
   ],
   "tests": {
-    "extensions": [
-      "kiwi",
-      "tiger",
-      "albinoaddon"
-    ],
     "annotations": [
       "UnitTests",
       "IntegrationTests"
