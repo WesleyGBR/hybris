@@ -5,7 +5,7 @@
     {
       "name": "gremiostore",
       "path": "gremiostore",
-      "enabledRepositories": ["spartacus-6.17"]
+      "enabledRepositories": ["spartacus-6"]
     }
   ],
   "nodeVersion": "18"
