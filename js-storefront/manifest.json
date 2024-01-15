@@ -1,12 +1,9 @@
-
 {
-  "applications": 
-  [
-    {
-      "name": "yourstore",
-      "path": "yourstore",
-      "enabledRepositories": ["spartacus-6"]
-    }
+  "applications": [
+      {
+          "name": "mystore",
+          "path": "mystore",
+          "enabledRepositories": ["spartacus-6"]
+      }    
   ]
-  "nodeVersion": "18"
-} 
+}
