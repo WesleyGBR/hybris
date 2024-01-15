@@ -3,8 +3,8 @@
   "applications": 
   [
     {
-      "name": "gremiostore",
-      "path": "gremiostore",
+      "name": "yourstore",
+      "path": "yourstore",
       "enabledRepositories": ["spartacus-6"]
     }
   ],
