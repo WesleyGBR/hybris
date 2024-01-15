@@ -1,1 +1,12 @@
 
+{
+  "applications": 
+  [
+    {
+      "name": "gremiostore",
+      "path": "gremiostore",
+      "enabledRepositories": ["spartacus-6.17"]
+    }
+  ],
+  "nodeVersion": "18"
+} 
