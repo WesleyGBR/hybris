@@ -9,6 +9,7 @@
       "ssr": {
                 "enabled": true,
                 "path": "dist/yourstore/yourstore-server/main.js"
+      }
     }
   ]
   "nodeVersion": "18"
