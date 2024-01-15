@@ -5,7 +5,10 @@
     {
       "name": "yourstore",
       "path": "yourstore",
-      "enabledRepositories": ["spartacus-6"]
+      "enabledRepositories": ["spartacus-6"],
+      "ssr": {
+                "enabled": true,
+                "path": "dist/yourstore/yourstore-server/main.js"
     }
   ],
   "nodeVersion": "18"
