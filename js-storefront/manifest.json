@@ -1,9 +1,0 @@
-{
-  "applications": [
-      {
-          "name": "mystore",
-          "path": "mystore",
-          "enabledRepositories": ["spartacus-6"]
-      }    
-  ]
-}
